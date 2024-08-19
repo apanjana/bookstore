@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: discovery-registry
+  datasource:
+    url: jdbc:h2:mem:testDb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
